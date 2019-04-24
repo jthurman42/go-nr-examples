@@ -16,7 +16,7 @@ var (
 
 // index prints the index page content
 func index(w http.ResponseWriter, r *http.Request) {
-	_, err := io.WriteString(w, "hello world")
+	_, err := io.WriteString(w, "Golang Instrumentation Examples for New Relic. Version: "+Version)
 	logIfError(err)
 }
 
